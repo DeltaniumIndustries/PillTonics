@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+  <object Name="Medication" Load="Merge">
+    <part Name="Render" DisplayName="[pill]" ColorString="&amp;Y" DetailColor="m" RenderString="012" RenderLayer="5" Tile="Items/pill.png" />
+    <part Name="Physics" Category="Meds" />
+    <part Name="Examiner" Unknown="*med" Alternate="*med" Complexity="1" />
+    <part Name="Description" Short="A tonic in capsule form." />
+    <part Name="PillTonic" />
+  </object>
+
+  <object Name="Tonic" Load="Merge">
+    <part Name="Examiner" Unknown="*med" Alternate="*med" Complexity="1" />
+    <part Name="Description" Short="A tonic in capsule form." />
+    <part Name="PillTonic" />
+  </object>
+
+  <object Name="Empty Booster" Inherits="Tonic">
+    <part Name="Render" DisplayName="{{K|empty}} capsule" />
+    <part Name="Examiner" Unknown="{{K|cracked}} capsule" Alternate="{{K|cracked}} capsule" Complexity="1" />
+    <part Name="Tonic" />
+  </object>
+
+  <object Name="LoveTonic" Load="Merge">
+    <part Name="Render" DisplayName="{{love|love}} pill" />
+    <part Name="RulesDescription" Text="You feel unusually amorous for about half a day, during which time you'll fall in love with the first thing you look at.
+If you feed this to someone else, they'll fall in love with you and follow you around for 3000-3600 rounds. There's a 4% failure rate for every level higher they are than you." />
+    <part Name="Tonic" />
+  </object>
+
+  <object Name="BlazeTonic" Load="Merge">
+    <part Name="Render" DisplayName="{{blaze|blaze}} pill" />
+    <part Name="Tonic" />
+  </object>
+
+  <object Name="HulkHoneyTonic" Load="Merge">
+    <part Name="Render" DisplayName="{{G|hulk}} {{w|honey}} pill" />
+    <part Name="Tonic" />
+  </object>
+
+  <object Name="SalveTonic" Load="Merge">
+    <part Name="Render" DisplayName="{{Y|salve}} pill" />
+    <part Name="Tonic" />
+  </object>
+
+  <object Name="SkulkTonic" Load="Merge">
+    <part Name="Render" DisplayName="{{skulk|skulk}} pill" />
+    <part Name="Tonic" />
+  </object>
+
+  <object Name="SphynxSaltTonic" Load="Merge">
+    <part Name="Render" DisplayName="{{sphynx|sphynx}} {{Y|salt}} pill" />
+    <part Name="Tonic" />
+  </object>
+
+  <object Name="ShadeOilTonic" Load="Merge">
+    <part Name="Render" DisplayName="{{shade|shade oil}} pill" />
+    <part Name="Tonic" />
+  </object>
+
+  <object Name="UbernostrumTonic" Load="Merge">
+    <part Name="Render" DisplayName="{{ubernostrum|ubernostrum}} pill" />
+    <part Name="Tonic" />
+  </object>
+
+  <object Name="RubbergumTonic" Load="Merge">
+    <part Name="Render" DisplayName="{{rubbergum|rubbergum}} pill" />
+    <part Name="Tonic" />
+  </object>
+
+  <object Name="NectarTonic" Load="Merge">
+    <part Name="Render" DisplayName="{{eater|Eaters'}} {{nectar|nectar}} pill" />
+    <part Name="Tonic" />
+  </object>
+
+  <object Name="Congealed Shade Oil" Load="Merge">
+    <part Name="Description" Short="Shade oil was extracted from its capsule, thickened in the acrid air, and bottled for culinary use." />
+  </object>
+
+  <object Name="Congealed Blaze" Load="Merge">
+    <part Name="Description" Short="Blaze was extracted from its capsule, thickened in the acrid air, and bottled for culinary use." />
+  </object>
+
+  <object Name="Congealed Salve" Load="Merge">
+    <part Name="Description" Short="Salve was extracted from its capsule, thickened in the acrid air, and bottled for culinary use." />
+  </object>
+
+  <object Name="Soul Curd" Load="Merge">
+    <part Name="Description" Short="Ubernostrum was extracted from its capsule, thickened in the acrid air, and bottled for culinary use." />
+  </object>
+
+  <object Name="Drop of Nectar" Load="Merge">
+    <part Name="Description" Short="Eaters' nectar was extracted from its capsule, thickened in the acrid air, and bottled for culinary use." />
+  </object>
+
+  <object Name="Congealed Hulk Honey" Load="Merge">
+    <part Name="Description" Short="Hulk honey was extracted from its capsule, thickened in the acrid air, and bottled for culinary use." />
+  </object>
+
+  <object Name="Congealed Skulk" Load="Merge">
+    <part Name="Description" Short="Skulk was extracted from its capsule, thickened in the acrid air, and bottled for culinary use." />
+  </object>
+
+  <object Name="Congealed Love" Load="Merge">
+    <part Name="Description" Short="Love was extracted from its capsule, thickened in the acrid air, and bottled for culinary use." />
+  </object>
+
+  <object Name="Congealed Rubbergum" Load="Merge">
+    <part Name="Description" Short="Rubbergum was extracted from its capsule, thickened in the acrid air, and bottled for culinary use." />
+  </object>
+
+
+  <object Name="Boosterbot" Load="Merge">
+    <part Name="Render" Tile="Creatures/sw_boosterbot.png" />
+    <part Name="Description" Short="This ancient medical robot is shaped like a squat, friendly dwarf, with =pronouns.possessive= painted features long worn away to swaths of pitted metal. =pronouns.Subjective= =verb:reach:afterpronoun= a helpful arm out, holding a bottle of assorted tonic capsules, ready to cheerfully cleanse the world of all its varied disease." />
+  </object>
+
+  <object Name="Boosterbot_Gun" Load="Merge">
+    <part Name="Description" Short="It's a small crossbow with a wide barrel to hold pills." />
+  </object>
+
+  <object Name="Dart Gun" Load="Merge">
+    <part Name="Render" DisplayName="pill gun" />
+    <part Name="Description" Short="A small crossbow with a wide barrel to hold pills." />
+  </object>
+
+  <object Name="Clue_EmptyInjector" Inherits="Empty Booster">
+    <part Name="Render" DisplayName="half of an empty capsule" DetailColor="K" RenderLayer="10"/>
+    <part Name="Description" Short="Someone inexplicably ingested only half of this tonic capsule." />
+  </object>
+
+</objects>

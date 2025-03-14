@@ -1,0 +1,10 @@
+{
+	"id": "PillTonics",
+	"loadorder": 1,
+	"title": "Tonics are Pills (1.0 Fix)",
+	"description": "Re-tiles and re-flavors all injectors as pills. \n\n\nThis mod has had work done to enable it to function with Release 1.0. All attempts to retain all original functionality have been made, but the updating author provides no support. -LL",
+	"tags": "Tile, Cosmetic",
+	"version": "1.0.0",
+	"author": "{{glotrot|LunarLaurus}}, Jakusio",
+	"previewImage": "preview.png"
+}
